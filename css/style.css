@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&family=Anton&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #FFFAFF;
+    background: linear-gradient(to bottom, #64B85D, #D1F3C5);
+    font-family: 'Metrophobic';
+    overflow-x: hidden;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Metrophobic';
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Anton';
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    margin-top: 2%;
+}
+
+p {
+    font-size: 22px;
+}
+
+/* MENU */
+.menu {
+    height: 100px;
+    margin-bottom: 2%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal li {
+    margin: 20px auto;
+    font-size: larger;
+    display: inline-block;
+}
+
+.horizontal a {
+    position: relative;
+    font-family: 'Anton';
+    color: #FFFAFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: larger;
+}
+
+.horizontal a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFFAFF;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: bottom;
+    transform: scaleX(0);
+}
+
+.horizontal a:hover::after {
+    transform: scaleX(1);
+}
+
+/* LOGO */
+.img-logo {
+    height: 240px;
+    width: 240px;
+}
+
+#titulo {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: escribir 5s steps(40, end) forwards;
+}
+
+@keyframes escribir {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* SOBRE MI */
+#sobremi p {
+    color: #FFFAFF;
+}
+
+/* CONTENIDO DE LA SECCION HABILIDADES */
+.cont-hab {
+    overflow: hidden;
+}
+
+.cont-hab img {
+    width: 125px;
+    height: 125px;
+    margin: auto 25px;
+    transition: transform 0.3s ease;
+}
+
+.cont-hab:hover img {
+    transform: scale(1.1);
+}
+
+/* FORMACION */
+.img-form {
+    max-width: 100%;
+    height: auto;
+}
+
+#ingles-img {
+    width: 200px;
+    height: auto;
+}
+
+.row-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row-text p {
+    margin: 0;
+    color: #51bd47;
+}
+
+.row-margin {
+    margin-bottom: 20px;
+}
+
+/* TARJETAS */
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 15% auto 15%;
+}
+
+.tarjeta {
+    width: 100%;
+    height: 50%;
+    background-color: #FFFAFF;
+    color: #64B85D;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+    display: flex;
+}
+
+.col-12, .col-md-6 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.tarjeta:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.delante {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    margin: 0;
+}
+
+#chat-img, #calc-img, #mapa-img {
+    object-fit: scale-down;
+}
+
+.tarjeta-txt p {
+    padding: 15px;
+    text-align: center;
+    flex-grow: 1;
+    align-items: stretch;
+    margin-top: 20px;
+}
+
+.img-txt {
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;
+    background-color: #64B85D;
+    color: #FFFAFF;
+    font-family: 'Anton';
+    padding: 5px;
+    width: 100%;
+}
+
+.card-button {
+    width: 100%;
+    background-color: #64B85D;
+    color: #FFFAFF;
+    justify-content: center;
+    border: 1px solid #64B85D;
+    border-radius: 10px;
+    padding: 7px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.card-button:hover {
+    background-color: #FFFAFF;
+    color: #64B85D;
+}
+
+.card-icon {
+    height: 48px;
+    width: 48px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTACTO */
+#contacto {
+    color: black;
+}
+
+.img-form {
+    height: 100%;
+    width: 250px;
+}
+
+.img-footer {
+    height: 30px;
+    width: 30px;
+}
